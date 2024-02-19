@@ -22,10 +22,11 @@ public class ToScrollTillParticularWebElement {
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		
 		//To scroll till the particular web element
-		js.executeScript("arguments[0].scrollIntoView(true)",scrollTarget);
+		js.executeScript("arguments[0].scrollIntoView(false)",scrollTarget);
+		
 
 		Thread.sleep(2000);
-		driver.close();
+		//driver.close();
 	}
 
 }

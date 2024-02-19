@@ -20,6 +20,7 @@ public class ToPerformVerticalScrolling {
 		//To perform downward Scrolling operation
 		js.executeScript("window.scrollBy(0,1000)");
 		Thread.sleep(2000);
+	
 		
 		//To perform upward Scrolling operation
 		js.executeScript("window.scrollBy(0,-500)");
