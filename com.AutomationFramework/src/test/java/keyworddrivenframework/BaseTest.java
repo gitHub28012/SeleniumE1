@@ -8,41 +8,40 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class BaseTest implements IAutoConstant {
+public class BaseTest extends Flib implements IAutoConstant {
+
+	public static WebDriver driver;
 	
-	 public static WebDriver driver;
-	
-	public void setUp() throws IOException
-	{
-		Flib lib = new Flib();
-		String browser = lib.getDataFromProperty(PROP_PATH, "browser");
+	public void setUp() throws IOException {
+		Flib flib = new Flib();
+		String browserValue = flib.readPropertyData(PROP_PATH, "browser2");
+		String url = flib.readPropertyData(PROP_PATH, "url");
+
+		if (browserValue.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();	
+		}
+		else if(browserValue.equalsIgnoreCase("firefox"))
+		{
+			 driver = new FirefoxDriver();	
+		}
 		
-		if(browser.equals("chrome"))
+		else if(browserValue.equalsIgnoreCase("edge"))
 		{
-			driver= new ChromeDriver();
-		}
-		else if (browser.equals("firefox"))
-		{
-			driver = new FirefoxDriver();
-		}
-		else if(browser.equals("edge"))
-		{
-			driver = new EdgeDriver();
-		}
+			 driver = new EdgeDriver();
+	    }
+		
 		else
 		{
-			System.out.println("Invalid browser");
+			System.out.println("Enter valid browser name !!!");
 		}
+		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMESECONDS));
-		String url = lib.getDataFromProperty(PROP_PATH, "url");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.get(url);
-			
 	}
 	
 	public void tearDown()
 	{
 		driver.quit();
 	}
-
 }
