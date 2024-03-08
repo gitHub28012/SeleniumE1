@@ -21,7 +21,11 @@ public class ValidLoginTestCase extends BaseTest {
 		// To perform login operation by calling the method
 		lp.validLoginMethod(flib.readPropertyData(PROP_PATH, "username"),flib.readPropertyData(PROP_PATH, "password"));
 	
-	    driver.findElement(By.xpath("//div[text()='Tasks']")).click();
+	    Thread.sleep(5000);
+	    
+	    HomePage hp = new HomePage(driver);
+	    hp.getLogoutLink().click();
+	    
 	}
 
 }

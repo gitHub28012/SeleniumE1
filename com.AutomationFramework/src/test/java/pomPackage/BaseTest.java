@@ -14,7 +14,7 @@ public class BaseTest extends Flib implements IAutoConstant {
 	
 	public void setUp() throws IOException {
 		Flib flib = new Flib();
-		String browserValue = flib.readPropertyData(PROP_PATH, "browser2");
+		String browserValue = flib.readPropertyData(PROP_PATH, "browser1");
 		String url = flib.readPropertyData(PROP_PATH, "url");
 
 		if (browserValue.equalsIgnoreCase("chrome")) {
