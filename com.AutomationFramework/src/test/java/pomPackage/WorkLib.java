@@ -2,7 +2,9 @@ package pomPackage;
 
 import java.util.Random;
 
-public class WorkLib {
+import org.openqa.selenium.support.ui.Select;
+
+public class WorkLib extends BaseTest {
 
 	public int randomNo()
 	{
@@ -10,4 +12,6 @@ public class WorkLib {
 		int no = r.nextInt(1000);
 		return no;	
 	}
+	
+	
 }
