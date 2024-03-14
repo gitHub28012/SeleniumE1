@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Sumo {
-	@Test
+	@Test (groups = "Integration Test")
 	public void sumo() throws InterruptedException {
 
 		WebDriver driver = new ChromeDriver();

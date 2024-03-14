@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Remo {
-	@Test
+	@Test(groups = "Smoke Test")
 	public void remo() throws InterruptedException {
 
 		WebDriver driver = new ChromeDriver();

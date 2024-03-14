@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T14:42:34Z" name="Suite" finished-at="2024-03-13T14:43:01Z" duration-ms="26766">
+  <suite started-at="2024-03-14T14:53:49Z" name="Suite" finished-at="2024-03-14T14:53:59Z" duration-ms="9755">
     <groups>
+      <group name="Smoke Test">
+        <method signature="Remo.remo()[pri:0, instance:testNGExecution.Remo@12359a82]" name="remo" class="testNGExecution.Remo"/>
+      </group> <!-- Smoke Test -->
     </groups>
-    <test started-at="2024-03-13T14:42:34Z" name="Test" finished-at="2024-03-13T14:43:01Z" duration-ms="26766">
-      <class name="testNGExecution.Demo">
-        <test-method signature="demo()[pri:0, instance:testNGExecution.Demo@6c4980d3]" started-at="2024-03-13T14:42:44Z" name="demo" finished-at="2024-03-13T14:42:53Z" duration-ms="8664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo -->
-      </class> <!-- testNGExecution.Demo -->
+    <test started-at="2024-03-14T14:53:49Z" name="Test" finished-at="2024-03-14T14:53:59Z" duration-ms="9755">
       <class name="testNGExecution.Remo">
-        <test-method signature="remo()[pri:0, instance:testNGExecution.Remo@65b104b9]" started-at="2024-03-13T14:42:34Z" name="remo" finished-at="2024-03-13T14:42:44Z" duration-ms="9530" status="PASS">
+        <test-method signature="remo()[pri:0, instance:testNGExecution.Remo@12359a82]" started-at="2024-03-14T14:53:49Z" name="remo" finished-at="2024-03-14T14:53:59Z" duration-ms="9727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- remo -->
       </class> <!-- testNGExecution.Remo -->
-      <class name="testNGExecution.Sumo">
-        <test-method signature="sumo()[pri:0, instance:testNGExecution.Sumo@327bcebd]" started-at="2024-03-13T14:42:53Z" name="sumo" finished-at="2024-03-13T14:43:01Z" duration-ms="8537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sumo -->
-      </class> <!-- testNGExecution.Sumo -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
