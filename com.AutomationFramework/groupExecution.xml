@@ -4,9 +4,9 @@
   <test thread-count="5" name="Test">
 	  <groups>
 		  <run>
+			  <include name="Functional Test"></include>
 			  <include name="Smoke Test"></include>
 			  <exclude name="Integration Test"></exclude>
-			  <exclude name="Functional Test"></exclude>
 		  </run>
 	  </groups>
     <classes>

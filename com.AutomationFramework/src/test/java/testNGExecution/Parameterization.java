@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 public class Parameterization {
   static WebDriver driver;
 	
- 
   @Test
   @Parameters({"browser","url","Vusername","Vpassword"})
   public void validLogin(String bname, String url, String usn, String pwd) throws InterruptedException {
