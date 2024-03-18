@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 16 20:16:24 IST 2024</td>
+<td>Started on:</td><td>Mon Mar 18 20:07:54 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2597 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4956 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testNGExecution.ActitimeAssertion.login()'><b>login</b><br>Test class: testNGExecution.ActitimeAssertion</td>
-<td><div><pre>java.lang.AssertionError: Login Page is not displayed expected [actiTIME -  Login ] but found [actiTIME - Login]
+<td title='testNGListeners.ValidLogin.login()'><b>login</b><br>Test class: testNGListeners.ValidLogin<br/>
+<a href="#Output-183304529" onClick='toggleBox("Output-183304529", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-183304529" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-183304529">
+This method is failed and taken Screenshot :login<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Username Textbox is displayed expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at testNGExecution.ActitimeAssertion.login(ActitimeAssertion.java:25)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at testNGListeners.ValidLogin.login(ValidLogin.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,14 +115,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1080167822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1080167822'><pre>java.lang.AssertionError: Login Page is not displayed expected [actiTIME -  Login ] but found [actiTIME - Login]
+</pre></div><a href='#' onClick='toggleBox("stack-trace183304529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace183304529'><pre>java.lang.AssertionError: Username Textbox is displayed expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at testNGExecution.ActitimeAssertion.login(ActitimeAssertion.java:25)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at testNGListeners.ValidLogin.login(ValidLogin.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,7 +150,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>testNGExecution.ActitimeAssertion@c7ba306</td></tr>
+<td>testNGListeners.ValidLogin@5c44c582</td></tr>
 </table><p>
 </body>
 </html>

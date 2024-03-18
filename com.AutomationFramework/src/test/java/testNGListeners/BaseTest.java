@@ -22,7 +22,7 @@ public class BaseTest extends Flib implements IAutoConstant {
 	@BeforeMethod
 	public void setUp() throws IOException {
 		Flib flib = new Flib();
-		String browserValue = flib.readPropertyData(PROP_PATH, "browser2");
+		String browserValue = flib.readPropertyData(PROP_PATH, "browser1");
 		String url = flib.readPropertyData(PROP_PATH, "url");
 
 		if (browserValue.equalsIgnoreCase("chrome")) {
@@ -48,12 +48,17 @@ public class BaseTest extends Flib implements IAutoConstant {
 		driver.get(url);
 	}
 	
-	public void failedMethodSS(String failedMethod) throws IOException
+	public void failedMethodSS(String failedMethod) 
 	{
 		TakesScreenshot ts =(TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		File dest = new File(SCREENSHOT_PATH+failedMethod+".png");
-		Files.copy(src, dest);
+		try {
+			Files.copy(src, dest);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	
